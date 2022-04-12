@@ -87,5 +87,57 @@ function sayThanks() {
 }
 
 sayThanks()
-sayThanks()
-sayThanks()
+
+// Add in a parameter in the function
+function sayThanks(name) {
+  console.log(`Thank you for your purchase ${name}! We appreciate your business.`);
+}
+
+sayThanks('Cole')
+
+// You can set default parameters in functions for example.
+
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs')
+
+// Random example of functions with parameters
+
+function monitorCount(rows, columns) {
+  return rows * columns
+};
+
+const numOfMonitors = monitorCount(5,4);
+
+console.log(numOfMonitors);
+
+// this builds on top of the previous example in which is called a helper function 
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200
+}
+
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
+
+// Arrow functions literally takes off function and adds in => after parameters For example.
+
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// arrow functions are quick and easy if you want an inline code you can rewrite the function like this, its without the parenthesis and without the return
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
