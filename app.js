@@ -234,12 +234,60 @@ let numberClusters = [[1,2], [3,4], [5,6]];
 const target = numberClusters[2][1];
 console.log(target);
 
+// The For Loop
+// Now, make your own! Create a program that loops from 5 to 10 and logs each number to the console.
+
+for (let counter = 5; counter <= 10; counter++) {
+ console.log(counter);
+}
+
+// Make a for loop that loops backwards printing 3 to 0 to the console. Use the >= comparison operator in your stopping condition and the -- operator in your iteration statement.
+for (let counter = 3; counter >= 0; counter--) {
+  console.log(counter);
+}
+
+// iterating over arrays
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+// Write your code below
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log(`I would love to visit ${vacationSpots[i]}`);
 
 
+// nested loops arrays (finding mutual followers)
+ 
+// Write your code below
+let bobsFollowers = ['Jeffrey', 'Ryan', 'Jp', 'Shane'];
+let tinasFollowers = ['Jeffrey', 'Ryan', 'Lili'];
+let  mutualFollowers = [];
 
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+ 
+//  while loops go continously when its true, but when its false it stops
+ const array1 = [1,2,3,4,5,6,7]
+ let i = 0;
+ while (i < array1.length) {
+  console.log(array1[i]);
+  i++;
+ }
+ 
+//  another example of while loops
+ 
+ const cards = ['diamond', 'spade', 'heart', 'club'];
 
+// Write your code below
 
-
-
+ let currentCard
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
 
 
