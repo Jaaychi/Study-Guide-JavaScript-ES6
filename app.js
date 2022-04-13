@@ -141,3 +141,105 @@ const plantNeedsWater = (day) => {
 // arrow functions are quick and easy if you want an inline code you can rewrite the function like this, its without the parenthesis and without the return
 
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+//arrays example
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+console.log(newYearsResolutions);
+
+const hobbies = ['string', 'string', 'string'];
+console.log(hobbies);
+
+//Accessing elements in array
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+let listItem = famousSayings[0]
+console.log(listItem);
+console.log(famousSayings[2]);
+// If you want to access an element that is not there, it will be undefined.
+console.log(famousSayings[3]);
+
+// Update Elements
+
+let groceryList = ['bread', 'tomatoes', 'milk'];
+groceryList[1] = 'avocados';
+
+//Arrays with let and const (you can change the insides of both arrays, you can change the whole array with let arrays but cannot with const)
+
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments[0] = 'Mayo';
+console.log(condiments);
+condiments = ['Mayo'];
+console.log(condiments);
+utensils[3] = 'Spoon'
+console.log(utensils);
+
+
+// The .length property
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+
+console.log(objectives.length);
+
+
+// The .push() Method
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+chores.push('watch tv', 'code')
+console.log(chores);
+
+// The .pop() method
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+chores.pop()
+console.log(chores)
+
+// More Array Methods 
+// .join(), .slice(), .splice(), .shift(), .unshift(), and .concat()
+
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+// pops the 1st element from the array
+groceryList.shift();
+console.log(groceryList);
+// adds an element to the front of the array
+groceryList.unshift('popcorn');
+console.log(groceryList);
+// slice is non-mutating
+console.log(groceryList.slice(1,4));
+console.log(groceryList);
+
+const pastaIndex = groceryList.indexOf('pasta')
+console.log(pastaIndex);
+
+// Arrays and Functions
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+  return arr[3] = 'MUTATED';
+}
+changeArr(concept);
+console.log(concept);
+
+function removeElement(newArr) {
+  return newArr.pop()
+}
+removeElement(concept);
+console.log(concept);
+
+//Nested Arrays
+
+let numberClusters = [[1,2], [3,4], [5,6]];
+
+const target = numberClusters[2][1];
+console.log(target);
+
+
+
+
+
+
+
+
+
+
