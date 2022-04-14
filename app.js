@@ -290,4 +290,93 @@ while (currentCard !== 'spade') {
   console.log(currentCard);
 }
 
+//  // for of loops for (const pokemon of pokemonList) 
+// //  Write a for...of loop that iterates through our pokemonList array.
+// Inside the block of the for...of loop, use console.log() and string interpolation as modeled above to log each element in the pokemon array within the string 'You caught a 'X'!' For example, the first iteration of the loop should print ‘You caught a Pikachu!’ to the console.
+// One of the elements, 'Yoshi', is not a Pokemon. If you encounter 'Yoshi', use continue to skip this element before it is logged to the console.
+ 
+ const pokemonList = ['Pikachu', 'Charizard', 'Squirtle', 'Yoshi', 'Snorlax'];
+// Write your code below
+for (const pokemon of pokemonList) {
+  if (pokemon === 'Yoshi') {
+    continue;
+  }
+  console.log(`You caught a ${pokemon}`)
+}
+ 
+// Creating Object Liteterals
+ 
+ // Write your fasterShip object literal below
+const fasterShip = {
+  color: 'silver',
+  'Fuel Type': 'Turbo Fuel'
+}
 
+// Bracket Notation
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+let propName =  'Active Mission';
+
+// Write your code below
+let isActive = spaceship['Active Mission']
+
+console.log(isActive)
+
+ // Property Assignment
+ 
+ let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+// Write your code below
+
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 5;
+
+delete spaceship['Secret Mission']
+ 
+// Methods 
+ 
+ let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+// Write your code below
+const alienShip = {
+  retreat: function () {
+    console.log('We no longer wish to conquer your planet. It is full of dogs, which we do not care for.')
+  },
+  takeOff: function () {
+    console.log('Spim... Borp... Glix... Blastoff!')
+  }
+};
+
+alienShip.retreat()
+alienShip.takeOff()
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
