@@ -360,7 +360,7 @@ const alienShip = {
 alienShip.retreat()
 alienShip.takeOff()
  
-// objects
+// objects 
  
  
  
