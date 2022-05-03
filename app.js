@@ -358,7 +358,7 @@ const alienShip = {
 };
 
 alienShip.retreat()
-alienShip.takeOff()
+alienShip.takeOff() 
  
 // objects 
  
